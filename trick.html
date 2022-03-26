@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* :root --> Applies for the main definitions before
+        everything else related to styles get fully loaded */
+        :root {
+            --cells-gap: 50px;
+            --block-size: 150px;
+        }
+
+        body {
+            align-items: center;
+            background-color: black;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            margin: 0;
+            width: 100vw;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-direction: column;
+            gap: var(--cells-gap);
+        }
+
+        .row {
+            display: flex;
+            gap: var(--cells-gap);
+        }
+
+        .block {
+            border: 1px solid white;
+            height: var(--block-size);
+            width: var(--block-size);
+        }
+
+        .emptyBlock {
+            background-color: transparent;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="row">
+            <div class="block" style="background-color: red;"></div>
+            <div class="block emptyBlock"></div>
+            <div class="block emptyBlock"></div>
+        </div>
+        <div class="row">
+            <div class="block emptyBlock"></div>
+            <div class="block" style="background-color: green;"></div>
+            <div class="block emptyBlock"></div>
+        </div>
+        <div class="row">
+            <div class="block emptyBlock"></div>
+            <div class="block emptyBlock"></div>
+            <div class="block" style="background-color: blue;"></div>
+        </div>
+    </div>
+</body>
+
+</html>

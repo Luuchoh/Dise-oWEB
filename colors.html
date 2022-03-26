@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            align-items: center;
+            background-color: black;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            margin: 0;
+            width: 100vw;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mainContainer div{
+            width: 500px;
+        }
+
+        .mainContainer div:nth-child(1){
+            height: 200px;
+            background-color: blue;
+        }
+
+        .mainContainer div:nth-child(2){
+            height: 160px;
+            background-color: red;
+        }
+
+        .mainContainer div:nth-child(3){
+            height: 120px;
+            background-color: green;
+        }
+
+        .mainContainer div:nth-child(4){
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
