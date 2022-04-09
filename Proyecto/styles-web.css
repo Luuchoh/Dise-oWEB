@@ -230,3 +230,12 @@ header{
     height: 80%;
     width: 15%;
 }
+
+@media(max-width: 500px){
+    .nav-web{
+        display: none;
+    }
+    .main-web-container{
+        display: none;
+    }
+}
