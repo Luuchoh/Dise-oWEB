@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root {
+    --blueTK: #20d5ec;
+    --redTK: #fe2c55;
+    --black: #000000;
+    --white: #ffffff;
+    --grisText: #161823bf;
+    --grisBg: #f1f1f2;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: auto ;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.itemFlexCenter{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Componente NAV */
+.navWebContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.navWeb{
+    max-width: 1150px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.logoTiktok{
+    height: 42px;
+    justify-content: flex-start;
+    padding-left: 24px;
+    width: 25%;
+}
+.logoTiktok img{
+    height: 100%;
+    width: auto;
+
+}
+.searchContainer{
+    height: 100%;
+    width: 30%;
+}
+.searchContainer form{
+    background-color: var(--grisBg);
+    border-radius: 50px;
+    height: 50px;
+    padding: 12px 16px;
+    width: 100%;
+}
+.search{
+    background-color: transparent;
+    border: 0;
+    color: var(--grisText) ;
+    outline: none;
+}
+.inputSearch{
+    font-size: 16px;
+    width: calc(85% - 2px);
+}
+.btnSearch{
+    font-size: 19px;
+    width: 15%;
+}
+.divider{
+    background: var(--grisText);
+    height: 28px;
+    margin: -3px 0;
+    width: 1px;
+}
+.profile{
+    height: 100%;
+    width: 25%;
+}
+
+.profile a{
+    color: var(--black);
+    height: 32px;
+    margin: 0 7px ;
+    text-decoration: none;
+    width: 32px;
+}
+.profile a i{
+    font-size: 1.3rem;
+}
+.btnAdd{
+    border-radius: 3px;
+    border: 1px solid var(--grisText);
+    font-weight: bold;
+    padding: 0 16px;
+    width: auto!important;
+}
+.btnAdd i{
+    margin-right: 8px;
+}
+.circle-user{
+    align-items: center;
+    background-color: var(--grisBg);
+    border-radius: 50%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*  MAIN */
+
+
+.mainWeb{
+    height: calc(100vh - 61px);
+    gap: 64px;
+    justify-content: space-between;
+    margin: 60px auto 0 auto;
+    max-width: 1150px;
+    width: 100%;
+}
+
+/* SIDEBAR */
+.sidebarContainer{
+    width: 356px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.sidebar{
+    height: 100%;
+    padding: 20px 0 26px 8px;
+    width: 100%;
+
+}
+
+/* SIDEBAR MENU PRINCIPAL */
+.mainContent{
+    margin-bottom: 20px;
+}
+.mainContentItem{
+    justify-content: flex-start;
+    font-weight: bold;
+    padding: 8px;
+}
+.mainContentItem i{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    height: 32px;
+    width: 32px;
+}
+.mainContentItem span{
+    font-size: 18px;
+}
+
+/* SIDEBAR CUENTAS RECOMENDACIONES */
+.recommendAccount{
+    padding: 16px 0;
+}
+
+.sidebarSubtitles {
+    padding: 0 8px;
+    margin-bottom: 10px;
+    color: var(--grisText);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.recommendAccountItem{
+    justify-content: flex-start;
+    padding: 8px;
+}
+
+.imgSidebar{
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+}
+
+.imgSidebar img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.userLink{
+    align-items: flex-start;
+    color: var(--black);
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.userLink .username{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.userLink .name{
+    color: #161823bf;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.check{
+    align-self: flex-start;
+    color: var(--blueTK);
+    padding-left: 8px;
+}
+
+.seeAll{
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--redTK);
+}
+
+/* SIDEBAR CUENTAS QUE SIGUES */
+
+.followAccount{
+    padding: 16px 0;
+}
+
+
+/* SIDEBAR TENDENCIAS */
+
+.trendsContainer{
+    padding: 16px 8px 8px 8px;
+}
+
+.pillContainer{
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.btnPill{
+    border-radius: 12px;
+    border: 1px solid var(--grisBg);
+    color: var(--grisText);
+    max-width: 100%;
+    overflow: hidden;
+    padding: 4px 8px;
+    text-overflow: ellipsis;
+    transition: all .5s;
+    white-space: nowrap;
+    width: auto;
+}
+
+.btnPill:hover {
+    opacity: .5;
+}
+
+.btnPill i{
+    color: var(--blueTK);
+}
+
+.btnPill i:hover{
+    color: var(--black);
+}
+
+
+
+/* SIDEBAR FOOTER Y FOOTER */
+
+.footerContainer{
+    flex-direction: column;
+    gap: 12px;
+    font-size: 12px;
+    justify-content: flex-start;
+    padding: 16px 0 0 8px;
+}
+
+.footerContainerItem{
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+}
+
+.footerContainerItem a,
+.footerContainerItem span{
+    color: var(--grisText);
+}
+
+/* VIDEO TIKTOK  */
+.tiktokContainer{
+    background-color: aquamarine;
+    flex: 1;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 50px 30px;
+}
+
+.cardContainer{
+    background-color: blue;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.mainContainer{
+    width: 15%;
+    background-color: #000;
+    padding: 9px;
+}
+.mainContainer img{
+    width: 50px;
+    height: 50px;
+    background-color: #f1f1f2;
+    border-radius: 50%;
+    color: #FFF;
+    text-align: center;
+    margin: auto;
+}
+
+.infoContainer{
+    width: 60%;
+    margin-left: 10px;
+    background-color: #000;
+    padding: 10px;
+}
+
+.infoUser{
+    background-color: #fff;
+    width: 100%;
+    height: 25%;
+    margin-bottom: 20px;
+}
+.infoVideoContainer{
+    background-color: #fff;
+    width: 100%;
+    height: 65%;
+    padding: 50px 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.infoVideo{
+    background-color: grey;
+    height: 100%;
+    width: 80%;
+}
+
+.infoLikes{
+    background-color: grey;
+    height: 80%;
+    width: 15%;
+}
+
+.tiktokContainer::-webkit-scrollbar,
+.sidebarContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.tiktokContainer::-webkit-scrollbar:vertical,
+.sidebarContainer::-webkit-scrollbar:vertical  {
+    width:6px;
+}
+
+.tiktokContainer::-webkit-scrollbar-button:increment,
+.tiktokContainer::-webkit-scrollbar-button,
+.sidebarContainer::-webkit-scrollbar-button:increment,
+.sidebarContainer::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.tiktokContainer::-webkit-scrollbar-thumb,
+.sidebarContainer::-webkit-scrollbar-thumb {
+    background-color: var(--grisBg);
+    border-radius: 20px;
+}
+
+.tiktokContainer::-webkit-scrollbar-track,
+.sidebarContainer::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+@media (max-width: 1080px) {
+    .profile{
+        width: 30%;
+    }
+}
+
+@media (max-width: 895px) {
+    .profile{
+        width: 35%;
+    }
+}
+
+@media(max-width: 500px){
+    .navWebContainer{
+        display: none;
+    }
+    .mainWeb{
+        display: none;
+    }
+    
+}

@@ -10,14 +10,16 @@
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./styles-web.css" />
+    <link rel="stylesheet" href="./mobileStyles.css" />
+    <link rel="stylesheet" href="./webStyles.css" />
+    <link rel="shortcut icon" href="./img/LogoTK.svg" type="image/x-icon">
 
-    <title>ticktock</title>
+    <title>Tick Tock</title>
   </head>
   <body>
     <header>
-      <nav class="nav-mobile">
+      <!-- NAV MOBILE -->
+      <nav class="navMobile">
         <ul>
           <li>
             <a href="">
@@ -30,7 +32,7 @@
             </a>
           </li>
           <li>
-            <a href="" class="agregar-video">
+            <a href="" class="addVideo">
               <i class="fa-solid fa-plus"></i>
             </a>
           </li>
@@ -46,86 +48,368 @@
           </li>
         </ul>
       </nav>
-      <nav class="nav-web">
-        <div class="n-logo-tiktok">
-          <img src="./img/tiktok negro2.png" alt="n-logo-tiktok" />
-        </div>
-        <div class="n-search-container">
-          <form action="search/" method="get">
-            <input type="text" class="search" />
-            <div class="search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </form>
-        </div>
-        <div class="n-profile">
-          <a href="">
-            <i class="fa-solid fa-cloud-arrow-up"></i>
-          </a>
-          <a href="">
-            <i class="fa-solid fa-paper-plane"></i>
-          </a>
-          <a href="">
-            <i class="fa-solid fa-message"></i>
-          </a>
-          <a href="">
-            <div class="circle-user">
-              <i class="fa-solid fa-user"></i>
-            </div>
-          </a>
+
+      <!-- NAV DESKTOP -->
+      <nav class="itemFlexCenter navWebContainer">
+        <div class="itemFlexCenter navWeb">
+          <div class="itemFlexCenter logoTiktok">
+            <img src="./img/tiktok negro2.png" alt="imgLogoTiktok" />
+          </div>
+          <div class="itemFlexCenter searchContainer">
+            <form class="itemFlexCenter" action="" method="get">
+              <input
+                type="text"
+                class="search inputSearch"
+                placeholder="Buscar cuentas y videos"
+              />
+              <span class="divider"></span>
+              <div class="itemFlexCenter search btnSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </form>
+          </div>
+          <div class="itemFlexCenter profile">
+            <a href="" class="itemFlexCenter btnAdd">
+              <i class="fa-solid fa-plus"></i>
+              <span>Cargar</span>
+            </a>
+            <a href="" class="itemFlexCenter">
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+            <a href="" class="itemFlexCenter">
+              <i class="fa-regular fa-message"></i>
+            </a>
+            <a href="" class="itemFlexCenter">
+              <div class="circle-user">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </a>
+          </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="main-mobile">
-        
-        <div class="m-m-main">
-          <div class="m-m-header"></div>
-          <div class="m-m-likes-container">
-            <div class="likes">
-              
-            </div>
+      <!-- MAIN MOBILE -->
+      <div class="mainMobile">
+        <div class="mobileMain">
+          <div class="MobileHeader"></div>
+          <div class="mobileLikesContainer">
+            <div class="likes"></div>
           </div>
-          <div class="m-m-info-user"></div>
-          <div class="m-m-install"></div>
+          <div class="mobileInfoUser"></div>
+          <div class="mobileInstall"></div>
         </div>
       </div>
-      <div class="main-web-container">
-        <div class="m-w-sidebar-container">
-          <div class="m-w-sidebar">
-            <div class="s-main-content"></div>
-            <div class="s-recommend-account"></div>
-            <div class="s-follow-account"></div>
-            <div class="s-trends-container"></div>
-            <div class="s-footer-container"></div>
-          </div>
-        </div>
-        <div class="m-w-tiktok-container">
-          <div class="t-card-container">
-            <div class="t-main-container">
-              <img src="./img/play.png" alt="img" />
+
+      <!-- MAIN DESKTOP -->
+      <div class="itemFlexCenter mainWeb contenedor">
+        <!-- SIDEBAR -->
+        <div class="sidebarContainer">
+          <div class="sidebar">
+            <div class="mainContent">
+              <div class="itemFlexCenter mainContentItem">
+                <i class="fa-solid fa-house"></i>
+                <span>Para ti</span>
+              </div>
+              <div
+                class="itemFlexCenter mainContentItem"
+                style="text-transform: capitalize"
+              >
+                <i class="fa-solid fa-user-group"></i>
+                <span>siguiendo</span>
+              </div>
+              <div
+                class="itemFlexCenter mainContentItem"
+                style="text-transform: uppercase"
+              >
+                <i class="fa-solid fa-video"></i>
+                <span>live</span>
+              </div>
             </div>
-            <div class="t-info-container">
-              <div class="t-info-user"></div>
-              <div class="t-info-video-container">
-                <div class="t-info-video-reprod">
-                  <video src=""></video>
+
+            <div class="recommendAccount">
+              <h4 class="sidebarSubtitles">Cuentas recomendadas</h4>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar1.jpeg" alt="avatarUser" />
                 </div>
-                <div class="t-info-video-likes"></div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">badbunny</span>
+                  <span class="name">bad bunny</span>
+                </a>
+                <i class="check fa-solid fa-circle-check"></i>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar2.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">shakira</span>
+                  <span class="name">shakira</span>
+                </a>
+                <i class="check fa-solid fa-circle-check"></i>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar3.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">rosalia</span>
+                  <span class="name">rosalia</span>
+                </a>
+                <i class="check fa-solid fa-circle-check"></i>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar4.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">gabyasturias</span>
+                  <span class="name">gaby_asturias 💋</span>
+                </a>
+                <i class="check fa-solid fa-circle-check"></i>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar5.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">Kimberly.loaiza</span>
+                  <span class="name">kimberly loaiza</span>
+                </a>
+                <i class="check fa-solid fa-circle-check"></i>
+              </div>
+
+              <a href="" class="seeAll">Ver todo</a>
+            </div>
+
+            <div class="followAccount">
+              <h4 class="sidebarSubtitles">Cuentas que sigues</h4>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar6.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">profesolmar</span>
+                  <span class="name">solmar varela</span>
+                </a>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar7.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">jasantaolalla</span>
+                  <span class="name">javi santaolalla</span>
+                </a>
+                <i class="check fa-solid fa-circle-check"></i>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar8.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">mks.vision</span>
+                  <span class="name">mks</span>
+                </a>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar9.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">historiaparatontos</span>
+                  <span class="name">HistoriaParaTontos</span>
+                </a>
+                <i class="check fa-solid fa-circle-check"></i>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar10.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">kateringarrido61</span>
+                  <span class="name">kateringarrido61</span>
+                </a>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar11.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">colglobalnews</span>
+                  <span class="name">colglobal noticias</span>
+                </a>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar12.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">profesor_py</span>
+                  <span class="name">el profe</span>
+                </a>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar13.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">xiaomihacks</span>
+                  <span class="name">xiaomihacks</span>
+                </a>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar14.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">maryellcisneros</span>
+                  <span class="name">maryell cisneros</span>
+                </a>
+              </div>
+
+              <div class="itemFlexCenter recommendAccountItem">
+                <div div class="imgSidebar">
+                  <img src="./img/avatars/avatar15.jpeg" alt="avatarUser" />
+                </div>
+                <a href="" class="itemFlexCenter userLink">
+                  <span class="username">funkygeezershow</span>
+                  <span class="name">funkyGeezerShow</span>
+                </a>
+              </div>
+
+              <a href="" class="seeAll">Ver más</a>
+            </div>
+
+            <div class="trendsContainer">
+              <h4 class="sidebarSubtitles">Tendencias</h4>
+
+              <div class="itemFlexCenter pillContainer">
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-hashtag"></i>
+                  <span>comedia</span>
+                </a>
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-hashtag"></i>
+                  <span>juanes</span>
+                </a>
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-hashtag"></i>
+                  <span>diadelmuseo</span>
+                </a>
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-music"></i>
+                  <span
+                    >La Niña Está Triste (En Vivo) (feat. Jesús "Tuti" Martínez)
+                    - Leo Dan</span
+                  >
+                </a>
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-music"></i>
+                  <span>Gogo Dance - El Alfa</span>
+                </a>
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-music"></i>
+                  <span>Cochinae - Julianno Sosa & King Savagge</span>
+                </a>
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-hashtag"></i>
+                  <span>lamusicanosune</span>
+                </a>
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-hashtag"></i>
+                  <span>casa</span>
+                </a>
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-music"></i>
+                  <span>Cyberpunk - Max Brhon</span>
+                </a>
+                <a href="" class="btnPill">
+                  <i class="fa-solid fa-music"></i>
+                  <span
+                    >Socadona (feat. Mariah Angeliq e Mr. Vegas) [Funk Remix] -
+                    LUDMILLA & DJ Will22 & Topo La Maskara</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            <div class="itemFlexCenter footerContainer">
+              <div class="itemFlexCenter footerContainerItem">
+                <a href="">Acerca de</a>
+                <a href="">Sala de prensa</a>
+                <a href="">Contactos</a>
+                <a href="">Vacantes</a>
+                <a href="">ByteDance</a>
+              </div>
+              <div class="itemFlexCenter footerContainerItem">
+                <a href="">TikTok for Good</a>
+                <a href="">Publicidad</a>
+                <a href="">Developers</a>
+                <a href="">Transparency</a>
+                <a href="">Rescompensas de TikTok</a>
+              </div>
+              <div class="itemFlexCenter footerContainerItem">
+                <a href="">Ayuda</a>
+                <a href="">Seguridad</a>
+                <a href="">Terminos</a>
+                <a href="">Privacidad</a>
+                <a href="">Creator Portal</a>
+                <a href="">Normas de la comunidad</a>
+                <a href="">Copyright</a>
+              </div>
+              <div class="itemFlexCenter footerContainerItem">
+                <a href="">Más</a>
+              </div>
+              <div class="itemFlexCenter footerContainerItem">
+                <span>©️ 2022 TikTok by Luis Hernández</span>
               </div>
             </div>
           </div>
-          <div class="t-card-container">
-            <div class="t-main-container">
+        </div>
+
+        <!-- SECTIONS -->
+        <div class="tiktokContainer">
+          <div class="cardContainer">
+            <div class="mainContainer">
               <img src="./img/play.png" alt="img" />
             </div>
-            <div class="t-info-container">
-              <div class="t-info-user"></div>
-              <div class="t-info-video-container">
-                <div class="t-info-video-reprod">
+            <div class="infoContainer">
+              <div class="infoUser"></div>
+              <div class="infoVideoContainer">
+                <div class="infoVideo">
                   <video src=""></video>
                 </div>
-                <div class="t-info-video-likes"></div>
+                <div class="infoLikes"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer">
+            <div class="mainContainer">
+              <img src="./img/play.png" alt="img" />
+            </div>
+            <div class="infoContainer">
+              <div class="infoUser"></div>
+              <div class="infoVideoContainer">
+                <div class="infoVideo">
+                  <video src=""></video>
+                </div>
+                <div class="infoLikes"></div>
               </div>
             </div>
           </div>

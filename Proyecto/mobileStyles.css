@@ -1,61 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* body{
-
-} */
-
-header>.nav-mobile{
+.navMobile{
     width: 100vw;
     height: 50px;
     position: absolute;
     bottom: 0;
 }
 
-.nav-mobile>ul{
+.navMobile ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: var(--black);
     list-style: none;
     text-align: center;
 }
-.nav-mobile>ul>li{
+.navMobile ul li{
     width: 20%;
     height: 100%;
     padding: 15px;
 }
-.nav-mobile>ul>li>a{
-    color: #FFFFFF;
+.navMobile ul li a{
+    color: var(--white);
 }
-.nav-mobile>ul>li>.agregar-video{
-    background-color: #FFFFFF;
+.addVideo{
+    background-color: var(--white);
     padding: 6px 12px;
     border-radius: 5px;
-    box-shadow: 5px 0px #F62B52, -4px 0px #24ECE7;
-    color: #000000;
+    box-shadow: 5px 0px var(--redTK), -4px 0px var(--blueTK);
+    color: #000000!important;
 }
 
-.m-m-main{
-    background-color: gray;
+.mobileMain{
+    background-color: var(--grisBg);
     height: calc(100vh - 50px);
     margin-bottom: 50px;
 }
 
-.m-m-header{
+.mobileHeader{
     background-color: #1944a0;
     width: 100%;
     height: calc(15% - 15px);
     opacity: 0.3;
     margin-bottom: 15px;
 }
-.m-m-likes-container{
+.mobileLikesContainer{
     background-color: #1944a0;
     width: 100%;
     height: calc(50% - 15px);
@@ -69,31 +60,41 @@ header>.nav-mobile{
     width: 20%;
     height: 100%;
 }
-.m-m-info-user{
+.mobileInfoUser{
     background-color: #1944a0;
     width: 100%;
     height: calc(20% - 15px);
     opacity: 0.3;
     margin-bottom: 15px;
 }
-.m-m-install{
+.mobileInstall{
     background-color: #1944a0;
     width: 100%;
     height: 15%;
     opacity: 0.3;
 }
 @media (min-width: 500px) {
-    header>.nav-mobile {
+    .navMobile {
       display: none;
     }
-    .main-mobile{
+    .mainMobile{
         display: none;
     }
-    .nav-web{
+    .navWebContainer{
         display: flex;
     }
-    .main-web-container{
+    .mainWeb{
         display: flex;
+    }
+    header{
+        border-bottom: 1px solid var(--grisBg);
+        background-color: var(--white);
+        height: 60px;
+        margin: auto;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        z-index: 100;
     }
 }
   
