@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./mobileStyles.css" />
     <link rel="stylesheet" href="./webStyles.css" />
-    <link rel="shortcut icon" href="./img/LogoTK.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/LogoTK.svg" type="image/x-icon" />
 
     <title>Tick Tock</title>
   </head>
@@ -88,17 +88,72 @@
         </div>
       </nav>
     </header>
+    
     <main>
+
       <!-- MAIN MOBILE -->
       <div class="mainMobile">
-        <div class="mobileMain">
-          <div class="MobileHeader"></div>
-          <div class="mobileLikesContainer">
-            <div class="likes"></div>
-          </div>
-          <div class="mobileInfoUser"></div>
-          <div class="mobileInstall"></div>
+        <video autoplay controls loop>
+          <source src="./video/tktk1.mp4" type="video/mp4" />
+        </video>
+        <div class="itemFlexCenter mobileHeader">
+          <span class="following">Siguiendo</span>
+          <span class="forYou">Para ti</span>
         </div>
+        <div class="itemFlexCenter mobileMain">
+
+          <div class="itemFlexCenter mobileLikes">
+            <div class="itemFlexCenter mobileAvatar">
+              <img src="./img/profile/netflix.jpeg" alt="avatar">
+            </div>
+            <div class="itemFlexCenter mobileBtns">
+              <button>
+                <i class="itemFlexCenter lni lni-heart-filled"></i>
+                <span class="number">481.6k</span>
+              </button>
+              <button>
+                <i class="itemFlexCenter lni lni-comments"></i>
+                <span class="number">4816</span>
+              </button>
+              <button>
+                <i class="itemFlexCenter lni lni-share"></i>
+                <span class="number">481</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="itemFlexCenter mobileInfoUser">
+            <div class="containerMobileInfoUser">
+              <div class="itemFlexCenter usernameContainer">
+              <a href="" class="itemFlexCenter userLink">
+                <span class="username">@netflix</span>
+                <i class="check fa-solid fa-circle-check"></i>
+              </a>
+              </div>
+              <div class="description">
+                <span>The mesmerising dance scenes from the beginning and end of 
+                  <a href="/">#Jibaro</a>
+                  <span>in</span>
+                  <a href="/">#LoveDeathAndRobots</a>
+              </div>
+              <div class="soundTrack">
+                <a href="" class=" itemFlexCenter music">
+                  <i class="fa-solid fa-music"></i>
+                  <marquee>original sound - Netflix</marquee>
+                </a>
+              </div>
+            </div>
+
+            <div class="itemFlexCenter containerRecord">
+              <div class="disk">
+                <img width="100%" src="./img/vinil.png" alt="img vinil">
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
       </div>
 
       <!-- MAIN DESKTOP -->
@@ -385,37 +440,188 @@
 
         <!-- SECTIONS -->
         <div class="tiktokContainer">
-          <div class="cardContainer">
-            <div class="mainContainer">
-              <img src="./img/play.png" alt="img" />
+          <div class="itemFlexCenter cardContainer">
+            <div class="avatarContainer">
+              <img src="./img/profile/netflix.jpeg" alt="img" />
             </div>
-            <div class="infoContainer">
-              <div class="infoUser"></div>
-              <div class="infoVideoContainer">
-                <div class="infoVideo">
-                  <video src=""></video>
+            <div class="itemFlexCenter mainContainer">
+              <div class="itemFlexCenter infoUserContainer">
+
+                <div class="itemFlexCenter infoUser">
+                  <div class="itemFlexCenter usernameContainer">
+                    <a href="" class="itemFlexCenter userLink">
+                      <span class="username">netflix</span>
+                      <i class="check fa-solid fa-circle-check"></i>
+                      <span class="name">netflix</span>
+                    </a>
+                  </div>
+                  <div class="description">
+                    <span>The mesmerising dance scenes from the beginning and end of 
+                      <a href="/">#Jibaro</a>
+                      <span>in</span>
+                      <a href="/">#LoveDeathAndRobots</a>
+                  </div>
+                  <div class="soundTrack">
+                    <a href="" class="music">
+                      <i class="fa-solid fa-music"></i>
+                      <span>original sound - Netflix</span>
+                    </a>
+                  </div>
+
                 </div>
-                <div class="infoLikes"></div>
+                <div class=" itemFlexCenter btnFollow">
+                  <button>seguir</button>
+                </div>
+
+              </div>
+              <div class="itemFlexCenter infoVideoContainer">
+                <div class="infoVideo">
+                  <video controls>
+                    <source src="./video/tktk1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="itemFlexCenter infoLikes">
+                  <button>
+                    <i class="itemFlexCenter lni lni-heart-filled"></i>
+                    <span class="number">481.6k</span>
+                  </button>
+                  <button>
+                    <i class="itemFlexCenter lni lni-comments"></i>
+                    <span class="number">4816</span>
+                  </button>
+                  <button>
+                    <i class="itemFlexCenter lni lni-share"></i>
+                    <span class="number">481</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="cardContainer">
-            <div class="mainContainer">
-              <img src="./img/play.png" alt="img" />
+
+
+          <div class="itemFlexCenter cardContainer">
+            <div class="avatarContainer">
+              <img src="./img/profile/elfindelahistoria.jpeg" alt="img" />
             </div>
-            <div class="infoContainer">
-              <div class="infoUser"></div>
-              <div class="infoVideoContainer">
-                <div class="infoVideo">
-                  <video src=""></video>
+            <div class="itemFlexCenter mainContainer">
+              <div class="itemFlexCenter infoUserContainer">
+
+                <div class="itemFlexCenter infoUser">
+                  <div class="itemFlexCenter usernameContainer">
+                    <a href="" class="itemFlexCenter userLink">
+                      <span class="username">elfindelahistoria</span>
+                      <span class="name">el fin de la historia  🌎</span>
+                    </a>
+                  </div>
+                  <div class="description">
+                    <span>18/6 🌎📰 </span>
+                      <a href="/">#noticias</a>
+                      <a href="/">#noticiasen1minuto</a>
+                      <a href="/">#politicainternacional</a>
+                      <a href="/">#información</a>
+                  </div>
+                  <div class="soundTrack">
+                    <a href="" class="music">
+                      <i class="fa-solid fa-music"></i>
+                      <span>THE NIGHT - Electro Dub Tango</span>
+                    </a>
+                  </div>
+
                 </div>
-                <div class="infoLikes"></div>
+                <div class=" itemFlexCenter btnFollow">
+                  <button>seguir</button>
+                </div>
+
+              </div>
+              <div class="itemFlexCenter infoVideoContainer">
+                <div class="infoVideo">
+                  <video controls>
+                    <source src="./video/tktk2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="itemFlexCenter infoLikes">
+                  <button>
+                    <i class="itemFlexCenter lni lni-heart-filled"></i>
+                    <span class="number">6464</span>
+                  </button>
+                  <button>
+                    <i class="itemFlexCenter lni lni-comments"></i>
+                    <span class="number">646</span>
+                  </button>
+                  <button>
+                    <i class="itemFlexCenter lni lni-share"></i>
+                    <span class="number">64</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+
+
+          <div class="itemFlexCenter cardContainer">
+            <div class="avatarContainer">
+              <img src="./img/profile/faykris.jpeg" alt="img" />
+            </div>
+            <div class="itemFlexCenter mainContainer">
+              <div class="itemFlexCenter infoUserContainer">
+
+                <div class="itemFlexCenter infoUser">
+                  <div class="itemFlexCenter usernameContainer">
+                    <a href="" class="itemFlexCenter userLink">
+                      <span class="username">faykris</span>
+                      <span class="name">Cristian Pinzón </span>
+                    </a>
+                  </div>
+                  <div class="description">
+                    <span>Momento memamente épico. Espero que salgan más para una segunda parte </span>
+                      <a href="/">#petro</a>
+                      <a href="/">#uribe</a>
+                      <a href="/">#petropresidente</a>
+                      <a href="/">#elPoderdeVivirelVerano</a>
+                      <a href="/">#rodolfohernandez</a>
+                  </div>
+                  <div class="soundTrack">
+                    <a href="" class="music">
+                      <i class="fa-solid fa-music"></i>
+                      <span>Funny Comedy - Gold-Tiger</span>
+                    </a>
+                  </div>
+
+                </div>
+                <div class=" itemFlexCenter btnFollow">
+                  <button>seguir</button>
+                </div>
+
+              </div>
+              <div class="itemFlexCenter infoVideoContainer">
+                <div class="infoVideo">
+                  <video controls>
+                    <source src="./video/tktk3.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="itemFlexCenter infoLikes">
+                  <button>
+                    <i class="itemFlexCenter lni lni-heart-filled"></i>
+                    <span class="number">1023</span>
+                  </button>
+                  <button>
+                    <i class="itemFlexCenter lni lni-comments"></i>
+                    <span class="number">102</span>
+                  </button>
+                  <button>
+                    <i class="itemFlexCenter lni lni-share"></i>
+                    <span class="number">10</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </main>
+
     <footer></footer>
 
     <script
